@@ -1,24 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./Button";
+import Accordion from "./Accordion";
+import { MdAddTask } from "react-icons/md";
+import { MdAssistantDirection } from "react-icons/md";
+import { MdBackHand } from "react-icons/md";
+import { MdAdsClick } from "react-icons/md";
 
 function App() {
+
+  //For Button
+  const handleClick = () =>{
+    console.log('click');
+  }
+
+  //For Accordion
+  const items = [
+    {
+      id: 'eubc',
+      label: 'How are you Harshal?',
+      content: 'Im doing great what about you'
+    },
+    {
+      id: 'eubcc',
+      label: 'How are you Aniket?',
+      content: 'Im doing great what about you'
+    },
+    {
+      id: 'eubec',
+      label: 'How are you Shubham?',
+      content: 'Im doing great what about you'
+    }
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+     {/* Button */}
+    <div>
+      <div>
+        <Button primary rounded onClick={handleClick}>
+          <MdAdsClick />Buy Now</Button>
+      </div>
+      <div>
+        <Button secondary outline onMouseOver={handleClick}>
+        <MdAssistantDirection />Sell</Button>
+      </div>
+      <div>
+        <Button success rounded>
+        <MdAddTask />Continue</Button>
+      </div>
+      <div>
+        <Button error>
+        <MdBackHand />Click here!</Button>
+      </div>
     </div>
+
+    {/* Accordion */}
+    <Accordion items={items}/>
+    </>
   );
 }
 
