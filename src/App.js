@@ -1,5 +1,7 @@
-import Button from "./Button";
-import Accordion from "./Accordion";
+import Button from "./Components/Button";
+import Accordion from "./Components/Accordion";
+import Dropdown from "./Components/Dropdown";
+
 import { MdAddTask } from "react-icons/md";
 import { MdAssistantDirection } from "react-icons/md";
 import { MdBackHand } from "react-icons/md";
@@ -31,6 +33,13 @@ function App() {
     }
   ]
 
+  //For Dropdown
+  const options = [
+    {label:'Green', value:'Green'},
+    {label:'Red', value:'Red'},
+    {label:'Yellow', value:'Yellow'}
+  ]
+
   return (
     <>
      {/* Button */}
@@ -55,6 +64,9 @@ function App() {
 
     {/* Accordion */}
     <Accordion items={items}/>
+
+    {/* Dropdown */}
+    <Dropdown options={options}/>
     </>
   );
 }
