@@ -1,6 +1,7 @@
 import Button from "./Components/Button";
 import Accordion from "./Components/Accordion";
 import Dropdown from "./Components/Dropdown";
+import Slider from "./Components/Slider";
 
 import { MdAddTask } from "react-icons/md";
 import { MdAssistantDirection } from "react-icons/md";
@@ -67,6 +68,9 @@ function App() {
 
     {/* Dropdown */}
     <Dropdown options={options}/>
+
+    {/*Slider*/}
+    <Slider />
     </>
   );
 }
