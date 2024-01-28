@@ -32,7 +32,7 @@ function Dropdown({ options }) {
     <div className="w-48 relative m-8" >
         <div className="flex justify-between items-center cursor-pointer border rounded p-3 shadow bg-white w-full" onClick={handleClick}>
               {selection?.label || 'Select..'} <ImCircleDown />
-              {isOpen && <div className="absolute top-full border rounded  shadow w-full">{renderedItems}</div>}
+              {isOpen && <div className="absolute top-full border rounded ml-1 shadow w-full">{renderedItems}</div>}
         </div>   
     </div>
   );

@@ -7,12 +7,14 @@ import { MdAddTask } from "react-icons/md";
 import { MdAssistantDirection } from "react-icons/md";
 import { MdBackHand } from "react-icons/md";
 import { MdAdsClick } from "react-icons/md";
+import { useState } from "react";
 
 function App() {
 
   //For Button
+  const[text, setText] = useState('Buy Now')
   const handleClick = () =>{
-    console.log('click');
+    setText((currentText)=> currentText==='Buy Now' ? 'Done' : 'Buy Now')
   }
 
   //For Accordion
@@ -20,17 +22,17 @@ function App() {
     {
       id: 'eubc',
       label: 'How are you Harshal?',
-      content: 'Im doing great what about you'
+      content: 'Im doing great what about you, Aniket'
     },
     {
       id: 'eubcc',
       label: 'How are you Aniket?',
-      content: 'Im doing great what about you'
+      content: 'Im doing great what about you, Shubham'
     },
     {
       id: 'eubec',
       label: 'How are you Shubham?',
-      content: 'Im doing great what about you'
+      content: 'Im doing great what about you, Harshal'
     }
   ]
 
@@ -42,12 +44,12 @@ function App() {
   ]
 
   return (
-    <>
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500">
      {/* Button */}
     <div>
       <div>
         <Button primary rounded onClick={handleClick}>
-          <MdAdsClick />Buy Now</Button>
+          <MdAdsClick />{text}</Button>
       </div>
       <div>
         <Button secondary outline onMouseOver={handleClick}>
@@ -71,7 +73,7 @@ function App() {
 
     {/*Slider*/}
     <Slider />
-    </>
+    </div>
   );
 }
 

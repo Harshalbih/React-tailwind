@@ -4,7 +4,7 @@ import { ImCircleDown } from "react-icons/im";
 import { ImCircleRight } from "react-icons/im";
 
 function Accordion ({items}){
-    const [expandedIndex, setExpnadedIndex] =useState(-1)
+    const [expandedIndex, setExpnadedIndex] =useState(-1) //-1 will keep index unselected
     
 
     const renderedItems = items.map((item, index)=>{
@@ -13,21 +13,21 @@ function Accordion ({items}){
 
         const handleAccordion = ()=> {
             if (expandedIndex === index){
-                setExpnadedIndex(-1)
+                setExpnadedIndex(-1) //for closing
             }else{
-            setExpnadedIndex(index);
+            setExpnadedIndex(index); //for opening
             }
         }
 
 
         return(
-            <>
+            
                 <div key={item.id}>
                 <div className="flex p-3 bg-gray-50 border-b items-center"onClick={handleAccordion}>
                     {Icon}{item.label}</div>
                 {isExpanded && <div className='border-b p-5'>{item.content}</div>}
                 </div>
-            </>
+            
         )
     })
 
