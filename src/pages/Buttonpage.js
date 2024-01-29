@@ -5,6 +5,7 @@ import { MdAssistantDirection } from "react-icons/md";
 import { MdBackHand } from "react-icons/md";
 import { MdAdsClick } from "react-icons/md";
 import { useState } from "react";
+import Sidebar from '../Components/Sidebar';
 
 function Buttonpage() {
 
@@ -15,12 +16,13 @@ function Buttonpage() {
 
   return (
     <div>
+        <Sidebar />
       <div>
         <Button primary rounded onClick={handleClick}>
           <MdAdsClick />{text}</Button>
       </div>
       <div>
-        <Button secondary outline onMouseOver={handleClick}>
+        <Button secondary outline onClick={handleClick}>
         <MdAssistantDirection />Sell</Button>
       </div>
       <div>

@@ -1,5 +1,7 @@
 import React from 'react'
 import Accordion from "../Components/Accordion";
+import Sidebar from '../Components/Sidebar';
+
 function Accordianpage() {
 
   const items = [
@@ -21,7 +23,7 @@ function Accordianpage() {
   ]
 
   return (
-    <><Accordion items={items}/></>
+    <><Sidebar /><Accordion items={items}/></>
   )
 }
 

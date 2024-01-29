@@ -8,7 +8,7 @@ function Slider() {
   };
 
   return (
-    <div className="ml-10 mt-40">
+    <div className="ml-10 mt-20">
       <h2>Select Age: {age} </h2>
       <input
         type="range"

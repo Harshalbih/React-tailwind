@@ -1,13 +1,19 @@
 import React from "react";
-import Dropdown from "./Components/Dropdown";
+import Dropdown from "../Components/Dropdown";
+import Sidebar from "../Components/Sidebar";
 
 function Dropdownpage() {
   const options = [
-    { label: "Green", value: "Green" },
-    { label: "Red", value: "Red" },
-    { label: "Yellow", value: "Yellow" },
+    { label: "Beta", value: "Green" },
+    { label: "Alpha", value: "Red" },
+    { label: "Sigma", value: "Yellow" },
   ];
-  return <div>Dropdownpage</div>;
+  return (
+    <div>
+        <Sidebar />
+      <Dropdown options={options} />
+    </div>
+  );
 }
 
 export default Dropdownpage;
