@@ -23,7 +23,7 @@ function Accordion ({items}){
         return(
             
                 <div key={item.id}>
-                <div className="flex p-3 bg-gray-50 border-b items-center"onClick={handleAccordion}>
+                <div className="flex p-3 bg-gray-50 border-b items-center cursor-pointer"onClick={handleAccordion}>
                     {Icon}{item.label}</div>
                 {isExpanded && <div className='border-b p-5'>{item.content}</div>}
                 </div>

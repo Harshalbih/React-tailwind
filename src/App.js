@@ -11,7 +11,7 @@ import {
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 col-span-5 min-h-screen">
+    <div className="bg-gradient-to-r from-cyan-200 to-blue-500 col-span-5 min-h-screen">
       <Router>
         <Routes>
           <Route exact path="/" element={<Buttonpage />}/>
