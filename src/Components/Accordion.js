@@ -25,7 +25,7 @@ function Accordion ({items}){
                 <div key={item.id}>
                 <div className="flex p-3 bg-gray-50 border-b items-center cursor-pointer"onClick={handleAccordion}>
                     {Icon}{item.label}</div>
-                {isExpanded && <div className='border-b p-5'>{item.content}</div>}
+                {isExpanded && <div className='border-b p-5 text-white'>{item.content}</div>}
                 </div>
             
         )
