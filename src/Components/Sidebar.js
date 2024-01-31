@@ -18,6 +18,9 @@ function Sidebar() {
         <li>
           <Link to="/slider" className="hover:text-blue-300 flex flex-y">Slider <GiClick className='mt-1'/></Link>
         </li>
+        <li>
+          <Link to="/modal" className="hover:text-blue-300 flex flex-y">Modal <GiClick className='mt-1'/></Link>
+        </li>
       </ul>
     </div>
   );
