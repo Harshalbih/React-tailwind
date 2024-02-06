@@ -21,6 +21,9 @@ function Sidebar() {
         <li>
           <Link to="/modal" className="hover:text-blue-300 flex flex-y">Modal <GiClick className='mt-1'/></Link>
         </li>
+        <li>
+          <Link to="/table" className="hover:text-blue-300 flex flex-y">Table <GiClick className='mt-1'/></Link>
+        </li>
       </ul>
     </div>
   );

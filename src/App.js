@@ -4,6 +4,7 @@ import Accordianpage from "./pages/Accordianpage";
 import Dropdownpage from "./pages/Dropdownpage";
 import Sliderpage from "./pages/Sliderpage";
 import Modalpage from "./pages/Modalpage";
+import Tablepage from "./pages/Tablepage";
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/dropdown" element={<Dropdownpage/>}/>
           <Route exact path="/slider" element={<Sliderpage />}/>
           <Route exact path="/modal" element={<Modalpage />}/>
+          <Route exact path="/table" element={<Tablepage />}/>
         </Routes>
       </Router>
     </div>
