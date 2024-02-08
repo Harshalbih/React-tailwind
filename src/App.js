@@ -5,6 +5,7 @@ import Dropdownpage from "./pages/Dropdownpage";
 import Sliderpage from "./pages/Sliderpage";
 import Modalpage from "./pages/Modalpage";
 import Tablepage from "./pages/Tablepage";
+import Counterpage from "./pages/Counterpage";
 
 import {
   BrowserRouter as Router,
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/slider" element={<Sliderpage />}/>
           <Route exact path="/modal" element={<Modalpage />}/>
           <Route exact path="/table" element={<Tablepage />}/>
+          <Route exact path="/counter" element={<Counterpage initialCount={10}/>}/>
         </Routes>
       </Router>
     </div>
