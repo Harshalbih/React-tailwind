@@ -16,7 +16,7 @@ import {
 function App() {
   return (
     <div className="bg-gradient-to-r from-cyan-800 to-blue-500 col-span-5 min-h-screen">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/" element={<Buttonpage />}/>
           <Route exact path="/accordian" element={<Accordianpage />}/>
