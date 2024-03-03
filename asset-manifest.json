@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Harshalbih/React-tailwind/static/css/main.4daf126c.css",
+    "main.js": "/Harshalbih/React-tailwind/static/js/main.7976f0ac.js",
+    "index.html": "/Harshalbih/React-tailwind/index.html",
+    "main.4daf126c.css.map": "/Harshalbih/React-tailwind/static/css/main.4daf126c.css.map",
+    "main.7976f0ac.js.map": "/Harshalbih/React-tailwind/static/js/main.7976f0ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4daf126c.css",
+    "static/js/main.7976f0ac.js"
+  ]
+}
