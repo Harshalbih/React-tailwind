@@ -1,6 +1,6 @@
 import React from 'react'
 import Table from '../Components/Table'
-import Sidebar from '../Components/Sidebar';
+import Sidebar from '../Components/Sidebar'
 
 function Tablepage() {
 const data = [
@@ -19,7 +19,6 @@ const config = [
     <div>
         <Sidebar />
         <Table data={data} config={config}/>
-       
     </div>
   )
 }
