@@ -5,6 +5,7 @@ import Dropdownpage from "./pages/Dropdownpage";
 import Modalpage from "./pages/Modalpage";
 import Tablepage from "./pages/Tablepage";
 import Counterpage from "./pages/Counterpage";
+import Carousal from "./Components/Carousal";
 
 import {
   BrowserRouter as Router,
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/modal" element={<Modalpage />}/>
           <Route exact path="/table" element={<Tablepage />}/>
           <Route exact path="/counter" element={<Counterpage initialCount={10}/>}/>
+          <Route exact path="/carousal" element={<Carousal/>}/>
         </Routes>
       </Router>
     </div>

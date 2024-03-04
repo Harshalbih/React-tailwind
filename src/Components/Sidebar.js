@@ -24,6 +24,9 @@ function Sidebar() {
         <li>
           <Link to="/counter" className="hover:text-blue-300 flex flex-y">Counter <GiClick className='mt-1'/></Link>
         </li>
+        <li>
+          <Link to="/carousal" className="hover:text-blue-300 flex flex-y">Carousal <GiClick className='mt-1'/></Link>
+        </li>
       </ul>
     </div>
   );
